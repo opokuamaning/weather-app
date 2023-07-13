@@ -9,18 +9,23 @@
     <title>Weather App</title>
 </head>
 <body>
-    <main class="d-flex align-items-center justify-content-center bg-black">
+    <main class="d-flex align-items-center justify-content-center flex-column text-light bg-black">
+        <h1>Weather App</h1>
+        <p>Type a location to get weather update</p>
         <section class="content-container d-flex flex-column justify-content-center align-items-start text-light p-4 ">
             <div class="search-section d-flex align-items-center justify-content-center">
                 <input type="text" class="weather-search">
                 <i class="fa-solid fa-magnifying-glass btn-click"></i>
             </div>
             <div class="weather-details d-flex flex-column justify-content-center align-items-start">
-                <div class="location-description wd-1 py-2 d-flex actual-location">Weather in</div>
-                <div class="py-1 wd-2">25.45 C</div>
-                <div class="py-1 wd-3">Scattered clouds</div>
-                <div class="wd-4">Humidity: 88%</div>
-                <div class="wd-5">Wind speed: 8.23km/h</div>
+                <div class="location-description wd-1 py-2 d-flex actual-location"></div>
+                <div class="py-1 wd-2"></div>
+                <div class="d-flex align-items-center">
+                    <img class="weather-icon">
+                    <div class="py-1 wd-3"></div>
+                </div>
+                <div class="wd-4"></div>
+                <div class="wd-5"></div>
             </div>
         </section>
     </main>
